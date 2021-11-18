@@ -11,8 +11,8 @@ metadata:
 spec:
   tls:
   - hosts:
-    - {{ .Values.name }}.com
-    - www.{{ .Values.name }}.com
+    - {{ .Values.domain }}
+    - www.{{ .Values.domain }}
     secretName: {{ .Values.name }}-tls
   rules:  
   - host: www.{{ .Values.name }}.com

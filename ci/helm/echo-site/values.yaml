@@ -1,5 +1,6 @@
 name: echo-site
 namespace: echo-site
+domain: echo-site.com
 
 service:
   port: 80
