@@ -45,9 +45,9 @@ jobs:
           charts_dir: ci/helm
           charts_repo_url: https://alifstudios.github.io/echo-site
 
-      # - name: 'Deploy'
-      #   uses: 'lab42/Helm@v21.6.1-916e8c0'
-      #   with:
-      #     helm: 'upgrade xvestr xvestr --install --atomic --wait --repo https://alifstudios.github.io/echo-site'
-      #     repository: 'xvestr-repo https://alifstudios.github.io/echo-site'
-      #     kubeconfig: '${{ secrets.KUBECONFIG }}'
+      - name: 'Deploy'
+        uses: 'lab42/Helm@v21.6.1-916e8c0'
+        with:
+          helm: 'upgrade echo-site echo-site --install --atomic --wait --repo https://alifstudios.github.io/echo-site'
+          # repository: 'xvestr-repo https://alifstudios.github.io/echo-site'
+          kubeconfig: '${{ secrets.KUBECONFIG }}'
