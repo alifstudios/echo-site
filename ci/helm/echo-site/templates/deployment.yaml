@@ -22,4 +22,4 @@ spec:
           ports:
             - containerPort: 5678
           args:
-            - "-text=echo-site.com"
+            - "-text={{ .Values.domain }}"
