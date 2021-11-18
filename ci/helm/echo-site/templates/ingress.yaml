@@ -13,7 +13,7 @@ spec:
   - hosts:
     - {{ .Values.name }}.com
     - www.{{ .Values.name }}.com
-    secretName: xvestr-tls
+    secretName: {{ .Values.name }}-tls
   rules:  
   - host: www.{{ .Values.name }}.com
     http:

@@ -32,18 +32,18 @@ jobs:
           push: true
           tags: rizwan/echo-site:latest
 
-      # - name: Install Helm
-      #   uses: azure/setup-helm@v1
-      #   with:
-      #     version: v3.4.0
+      - name: Install Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.4.0
 
-      # - name: Run chart-releaser
-      #   uses: helm/chart-releaser-action@v1.2.1
-      #   env:
-      #     CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      #   with:
-      #     charts_dir: ci/helm
-      #     charts_repo_url: https://alifstudios.github.io/echo-site
+      - name: Run chart-releaser
+        uses: helm/chart-releaser-action@v1.2.1
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        with:
+          charts_dir: ci/helm
+          charts_repo_url: https://alifstudios.github.io/echo-site
 
       # - name: 'Deploy'
       #   uses: 'lab42/Helm@v21.6.1-916e8c0'
