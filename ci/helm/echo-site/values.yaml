@@ -1,0 +1,9 @@
+name: echo-site
+namespace: echo-site
+
+service:
+  port: 80
+  targetPort: 5678
+
+image:
+  tag: latest
