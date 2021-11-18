@@ -1,0 +1,11 @@
+apiVersion: v1
+entries:
+  echo-site:
+  - apiVersion: v2
+    created: "2021-11-18T22:25:03.992685729Z"
+    digest: b0542a66ba7a638eea285378fd27f291cb25ab09d9ad0f25872382435b086996
+    name: echo-site
+    urls:
+    - https://github.com/alifstudios/echo-site/releases/download/echo-site-0.1.0/echo-site-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-11-18T22:25:03.992702529Z"
