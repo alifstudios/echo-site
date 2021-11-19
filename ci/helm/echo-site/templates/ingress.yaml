@@ -15,7 +15,7 @@ spec:
     - www.{{ .Values.domain }}
     secretName: {{ .Values.name }}-tls
   rules:  
-  - host: www.{{ .Values.name }}.com
+  - host: www.{{ .Values.domain }}
     http:
       paths:
       - path: /
